@@ -29,6 +29,8 @@
   hosts: frontends
   gather_facts: false # remove later! speeds up testing
   become: true
+  vars_files:
+    - ./vars.yml
 
   tasks:
   - name: http
